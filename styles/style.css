@@ -247,7 +247,6 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: none;
   outline: var(--accent-color) solid 2px;
 }
 
@@ -325,12 +324,6 @@
   mix-blend-mode: difference;
 }
 
-@media (width >= 700px) {
-  .footer__button {
-    flex-direction: row;
-  }
-}
-
 .footer__button:focus {
   outline: none;
 }
@@ -348,10 +341,6 @@
   background: rgba(0, 0, 0, 0.75);
 }
 
-.dialog-button {
-  position: relative;
-}
-
 .dialog-title {
   color: var(--accent-color);
   font-family: var(--accent-font);
@@ -366,7 +355,9 @@
   flex-direction: column;
   gap: 30px;
   max-width: 345px;
+  border: 2px solid var(--accent-color);
   padding: 30px 40px;
+  background-color: var(--main-color);
 }
 
 .dialog-floppy[open] .dialog-header {
@@ -377,10 +368,12 @@
 .dialog__floppy-icon {
   align-self: center;
   min-width: 39px;
+  fill: var(--accent-color);
   /* без мин width svg сжимается */
 }
 
 .dialog-button {
+  position: relative;
   box-shadow: 2px 2px 0px 0px transparent;
   transition: box-shadow 0.3s;
 }
@@ -424,4 +417,10 @@
 
 .cat-the-creator {
   filter: invert(0.2) contrast(150%) brightness(120%);
+}
+
+@media (width >= 700px) {
+  .footer__button {
+    flex-direction: row;
+  }
 }
