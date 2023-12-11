@@ -10,31 +10,64 @@
   --button-color: #fff;
   --card-font-weight: 400;
   --title-font-weight: 700;
-  --gradient-from-left-to-right: repeating-linear-gradient(#d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px);
-  --gradient-from-top-to-bottom: repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px);
+  --gradient-from-left-to-right: repeating-linear-gradient(
+    #d3d3d3 0px,
+    #d3d3d3 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  --gradient-from-top-to-bottom: repeating-linear-gradient(
+    90deg,
+    #d3d3d3 0px,
+    #d3d3d3 2px,
+    transparent 2px,
+    transparent 4px
+  );
   --gradient-blackout: repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
 }
 
 :root.theme-dark {
-  --accent-color: #00CC14;
+  --accent-color: #00cc14;
   --main-color: #000;
-  --button-color: #00CC14;
+  --button-color: #00cc14;
   --card-font-weight: 465;
   --title-font-weight: 785;
-  --gradient-from-left-to-right: repeating-linear-gradient(#000 0px, #000 2px, transparent 2px, transparent 4px);
-  --gradient-from-top-to-bottom: repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 4px);
+  --gradient-from-left-to-right: repeating-linear-gradient(
+    #000 0px,
+    #000 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  --gradient-from-top-to-bottom: repeating-linear-gradient(
+    90deg,
+    #000 0px,
+    #000 2px,
+    transparent 2px,
+    transparent 4px
+  );
   --gradient-blackout: repeating-linear-gradient(#007f0c 0%, #004306 100%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent-color: #00CC14;
+    --accent-color: #00cc14;
     --main-color: #000;
-    --button-color: #00CC14;
+    --button-color: #00cc14;
     --card-font-weight: 465;
     --title-font-weight: 785;
-    --gradient-from-left-to-right: repeating-linear-gradient(#000 0px, #000 2px, transparent 2px, transparent 4px);
-    --gradient-from-top-to-bottom: repeating-linear-gradient(90deg, #000 0px, #000 2px, transparent 2px, transparent 4px);
+    --gradient-from-left-to-right: repeating-linear-gradient(
+      #000 0px,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    );
+    --gradient-from-top-to-bottom: repeating-linear-gradient(
+      90deg,
+      #000 0px,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    );
     --gradient-blackout: repeating-linear-gradient(#007f0c 0%, #004306 100%);
   }
 }
