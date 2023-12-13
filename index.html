@@ -6,7 +6,7 @@
     <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" sizes="256x256" href="/svg/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="256x256" href="./images/favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -18,8 +18,10 @@
   <body class="page">
     <header class="header">
       <div class="header__titles">
-        <h1 class="header__title">&lt;/html&gt;</h1>
-        <h2 class="header__subtitle">закрывающий тег</h2>
+        <h2 class="header__title">
+          <a href="#0" class="header__title-link">&lt;/html&gt;</a>
+          </h2>
+        <h1 class="header__subtitle">закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -50,15 +52,13 @@
     <main class="main">
       <article class="card">
         <h2 class="card__title">
-          <span class="first-sprint"
-            >Фритрек и нулевой спринт: Подготовка к работе</span
-          >
+            >Фритрек и нулевой спринт: Подготовка к работе
         </h2>
         <div class="card__image-box">
           <img
             src="./images/small-cat.jpg"
             alt="маленький милый кот"
-            class="card__image small-cat"
+            class="card__image filter-contrast"
           />
           <p class="card__text-on-image">&lt;starting&gt;</p>
         </div>
@@ -74,7 +74,7 @@
           </p>
         </div>
         <div class="card__likes-menu">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -82,6 +82,7 @@
               viewBox="0 0 39 36"
               fill="none"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -107,7 +108,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -119,7 +120,7 @@
           <img
             src="./images/normal-cat.jpg"
             alt="нормальный голодный кот"
-            class="card__image normal-cat"
+            class="card__image filter-brightness"
           />
           <p class="card__text-on-image">&lt;/html&gt;</p>
         </div>
@@ -137,7 +138,7 @@
           </p>
         </div>
         <div class="card__likes-menu">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -145,6 +146,7 @@
               viewBox="0 0 39 36"
               fill="none"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -170,7 +172,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -182,7 +184,7 @@
           <img
             src="./images/normal-cat-with-big.jpg"
             alt="кот с очень большими глазами"
-            class="card__image normal-cat-with-big"
+            class="card__image filter-blur"
           />
           <p class="card__text-on-image">&lt;css&gt;</p>
         </div>
@@ -198,7 +200,7 @@
           </p>
         </div>
         <div class="card__likes-menu">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -206,6 +208,7 @@
               viewBox="0 0 39 36"
               fill="none"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -231,7 +234,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -243,7 +246,7 @@
           <img
             src="./images/cat-raged.jpg"
             alt="кот очень сильно злится"
-            class="card__image cat-raged"
+            class="card__image filter-opacity"
           />
           <p class="card__text-on-image card_text-lowercase">
             &lt;desigions&gt;
@@ -263,7 +266,7 @@
           </p>
         </div>
         <div class="card__likes-menu">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -271,6 +274,7 @@
               viewBox="0 0 39 36"
               fill="none"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -296,7 +300,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -308,7 +312,7 @@
           <img
             src="./images/god-cat.jpg"
             alt="кот начинающий пожирать мир"
-            class="card__image god-cat"
+            class="card__image filter-grayscale"
           />
           <p class="card__text-on-image card_text-lowercase">care</p>
         </div>
@@ -327,7 +331,7 @@
           </p>
         </div>
         <div class="card__likes-menu">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -335,6 +339,7 @@
               viewBox="0 0 39 36"
               fill="none"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -360,7 +365,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -372,7 +377,7 @@
           <img
             src="./images/cat-world-ender.jpg"
             alt="кот, пожирающий планету"
-            class="card__image cat-world-ender"
+            class="card__image filter-saturate"
           />
           <p class="card__text-on-image card_text-lowercase">&lt;support&gt;</p>
         </div>
@@ -388,7 +393,7 @@
           </p>
         </div>
         <div class="card__likes-menu">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -396,6 +401,7 @@
               viewBox="0 0 39 36"
               fill="none"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -421,7 +427,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -433,7 +439,7 @@
           <img
             src="./images/cat-eater-worlds.jpg"
             alt="кот - пожиратель миров"
-            class="card__image cat-eater-worlds"
+            class="card__image filter-hue-rotate"
           />
           <p class="card__text-on-image card_text-lowercase">
             &lt;lifes-style: none;&gt;
@@ -454,7 +460,7 @@
           </p>
         </div>
         <div class="card__likes-menu">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -462,6 +468,7 @@
               viewBox="0 0 39 36"
               fill="none"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -487,7 +494,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -499,7 +506,7 @@
           <img
             src="./images/cat-the-creator.jpg"
             alt="кот - создатель и пожиратель миров"
-            class="card__image cat-the-creator"
+            class="card__image many-filters"
           />
           <p class="card__text-on-image card_text-lowercase">
             &lt;experience&gt;
@@ -520,7 +527,7 @@
           </p>
         </div>
         <div class="card__likes-menu">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -528,6 +535,7 @@
               viewBox="0 0 39 36"
               fill="none"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -553,55 +561,58 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
-    </main>
-    <footer class="footer">
-      <button
-        class="footer__button button"
-        type="button"
-        onclick="window['dialog-floppy'].showModal();"
-        aria-controls="dialog-floppy"
-      >
-        <svg
-          viewBox="0 0 29 28"
-          width="29"
-          height="28"
-          class="footer__floppy-box"
-        >
-          <use
-            href="./svg/floppy-footer.svg#floppy"
-            class="footer__floppy"
-          ></use>
-        </svg>
-        <span class="button__text footer__button-text">
-          Сохранить на память
-        </span>
-      </button>
-      <dialog id="dialog-floppy" class="dialog-floppy">
-        <div class="dialog-header">
-          <svg
-            viewBox="0 0 39 39"
-            width="39"
-            height="39"
-            class="dialog__floppy-icon"
-          >
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-          <h2 class="dialog-title">Вставьте дискету, чтобы продолжить</h2>
-        </div>
+      <section class="end-section">
         <button
-          class="dialog-button button"
+          class="end-section__button button"
           type="button"
-          onclick="window['dialog-floppy'].close()"
+          onclick="window['dialog-floppy'].showModal();"
+          aria-controls="dialog-floppy"
         >
-          <span class="button__text">ок</span>
+          <svg
+            viewBox="0 0 29 28"
+            width="29"
+            height="28"
+            class="end-section__floppy-box"
+          >
+            <use
+              href="./svg/floppy-end-section.svg#floppy"
+              class="end-section__floppy"
+            ></use>
+          </svg>
+          <span class="button__text end-section__button-text">
+            Сохранить на память
+          </span>
         </button>
-      </dialog>
-    </footer>
+        <dialog id="dialog-floppy" class="dialog-floppy">
+          <div class="dialog-header">
+            <svg
+              viewBox="0 0 39 39"
+              width="39"
+              height="39"
+              class="dialog__floppy-icon"
+            >
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <h2 class="dialog-title">Вставьте дискету, чтобы продолжить</h2>
+          </div>
+          <form method="dialog" class="dialog-form">
+            <button
+              class="dialog-button button"
+              type="submit"
+              onclick="window['dialog-floppy'].close()"
+            >
+              <span class="button__text">ок</span>
+            </button>
+          </form>
+        </dialog>
+      </section>
+    </main>
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>

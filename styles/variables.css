@@ -1,9 +1,11 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: Inter;
-  --accent-font: PressStart2P;
+  --main-font: Inter, Arial, sans-serif;
+  --accent-font: PressStart2P, Arial, sans-serif;
   --accent-color: #000;
   --main-color: #fff;
+  --button-color: #fff;
+  --text-shadow-color: 255, 255, 255;
   --card-font-weight: 400;
   --title-font-weight: 700;
   --sparks-color: #ff0000;
