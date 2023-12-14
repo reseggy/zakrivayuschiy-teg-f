@@ -38,7 +38,7 @@
   align-items: center;
   gap: 25px;
   width: clamp(375px, 100%, 700px);
-  margin-top: 102px;
+  margin-top: 100px;
   border: 2px solid var(--accent-color);
   background-color: var(--main-color);
 }
@@ -81,7 +81,7 @@
 }
 
 .header__theme-menu {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .theme-menu__list {
@@ -169,7 +169,7 @@
 .card__title {
   align-self: self-start;
   width: 100%;
-  padding: 6px 10px 6px 10px;
+  padding: 5px 10px 4.5px 10px;
   color: var(--accent-color);
   font-family: var(--main-font);
   font-size: 18px;
@@ -190,9 +190,7 @@
   object-position: center;
 }
 
-.extended {
-  border-bottom: 4px solid var(--accent-color);
-}
+/* убрал класс extended, без него проще соответсвовать макету */
 
 .card__text-on-image {
   position: absolute;
@@ -212,6 +210,7 @@
     (text-stroke: 1px var(--text-shadow-color))
 ) {
   .card__text-on-image {
+    text-shadow: none;
     text-stroke: 1px rgba(var(--text-shadow-color), 0.5);
     -webkit-text-stroke: 1px rgba(var(--text-shadow-color), 0.5);
   }
@@ -235,13 +234,16 @@
   line-height: 21px;
 }
 
+.card__text:first-child {
+  padding-right: 26px;
+}
+
 .card .card__text {
   padding-top: 26px;
 }
 
 .card .card__text:last-child {
-  padding-bottom: 25.9px;
-  /* странное значение для соотверстивя макету) */
+  padding-bottom: 25.5px;
 }
 
 .card__likes-menu {
@@ -280,8 +282,10 @@
 
 .card__like-button {
   width: 130px;
-  padding-top: 10px;
-  padding-bottom: 6px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 2px 2px 0px 0px transparent;
   transition: box-shadow 0.3s;
 }
@@ -325,7 +329,6 @@
 .end-section {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   margin-bottom: 102px;
 }
 
@@ -342,6 +345,7 @@
   z-index: 1;
   fill: var(--button-color);
   mix-blend-mode: difference;
+  /* если я уберу какое-либо свойство, то свг не будет видно:(, стили от .button__text не могут наследоваться, потому что свг не является потомком этого элемента вроде как... */
 }
 
 .sparks {
@@ -389,6 +393,7 @@
 
 .dialog-button {
   min-width: 100%;
+  height: 38px;
   box-shadow: 2px 2px 0px 0px transparent;
   transition: box-shadow 0.3s;
 }
@@ -428,5 +433,9 @@
 @media (width >= 700px) {
   .end-section__button {
     flex-direction: row;
+    text-wrap: nowrap;
+    height: 55px;
+    width: 340px;
+    padding: 15px 20px 15px 20px;
   }
 }
