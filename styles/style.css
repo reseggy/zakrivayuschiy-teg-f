@@ -186,7 +186,7 @@
   display: block;
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -207,17 +207,13 @@
   mix-blend-mode: hard-light;
 }
 
-@supports (-webkit-text-stroke: 1px var(--text-shadow-color)) {
+@supports (
+  (-webkit-text-stroke: 1px var(--text-shadow-color)) or
+    (text-stroke: 1px var(--text-shadow-color))
+) {
   .card__text-on-image {
-    text-shadow: none;
-    -webkit-text-stroke: 1px rgba(var(--text-shadow-color), 0.5);
-  }
-}
-
-@supports (text-stroke: 1px var(--text-shadow-color)) {
-  .card__text-on-image {
-    text-shadow: none;
     text-stroke: 1px rgba(var(--text-shadow-color), 0.5);
+    -webkit-text-stroke: 1px rgba(var(--text-shadow-color), 0.5);
   }
 }
 
@@ -276,13 +272,13 @@
 }
 
 .button {
+  position: relative;
   border: 2px solid var(--accent-color);
   background-color: var(--main-color);
   cursor: pointer;
 }
 
 .card__like-button {
-  position: relative;
   width: 130px;
   padding-top: 10px;
   padding-bottom: 6px;
@@ -334,7 +330,6 @@
 }
 
 .end-section__button {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -344,7 +339,6 @@
 }
 
 .end-section__floppy-box {
-  position: relative;
   z-index: 1;
   fill: var(--button-color);
   mix-blend-mode: difference;
@@ -394,7 +388,6 @@
 }
 
 .dialog-button {
-  position: relative;
   min-width: 100%;
   box-shadow: 2px 2px 0px 0px transparent;
   transition: box-shadow 0.3s;
